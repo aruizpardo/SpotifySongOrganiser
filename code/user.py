@@ -47,6 +47,7 @@ class UserData:
             """.encode())
         conn.close()
 
+        # Get user token
         encoded_credentials = base64.b64encode(client_id.encode() + b':' + client_secret.encode()).decode("utf-8")
         token_headers = {
             "Authorization": "Basic " + encoded_credentials,
