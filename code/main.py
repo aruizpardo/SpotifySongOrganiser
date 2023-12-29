@@ -5,7 +5,7 @@ import json
 import requests
 
 # Internal
-from get_token import UserData
+from user import UserData
 
 
 user = UserData()
